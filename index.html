@@ -1,162 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <title>Product Landing Page</title>
-    <script src="https://kit.fontawesome.com/54ca38a1b3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./newstyles.css">
 </head>
-
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <header id="header">
-                <div class="logo">
-                    <h1 class="header__logo">
-                        DalaNinja
-                    </h1>
+    <header class="header">
+        <a href="#">
+            <picture class="header__logo-container">
+                <img class="header__logo" src="./assets/logo.png" alt="logo">
+            </picture>
+        </a>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__nav-li">
+                    <a href="#features" class="header__nav-link">
+                        Features
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#preview" class="header__nav-link">
+                        Preview
+                    </a>
+                </li>
+                <li class="header__nav-li">
+                    <a href="#pricing" class="header__nav-link">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h2 class="hero__title">Premium Creator Resources for Viral Success</h2>
+            <form class="hero__form">
+                <input class="hero__email" type="email" name="email" placeholder="Enter your Email address" required>
+                <input class="hero__btn primary-btn" type="submit" id="submit" value="Get Creator Tips">
+            </form>
+        </section>
+        <section class="features" id="features">
+            <div class="features__card">
+                <div class="features__icon">
+                    <i class="fa fa-3x fa-rocket"></i>
                 </div>
-                <nav id="nav-bar">
-                    <ul>
-                        <li class="nav-li">
-                            <a class="nav-link" href="#features">
-                                Features
-                            </a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-link" href="#how-it-works">
-                                How It Works
-                            </a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-link" href="#pricing">
-                                Pricing
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container"></div>
-            <section id="hero">
-                <h2>Elevate With Us: Join the Journey to Success!</h2>
-                <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" name="email" placeholder="Enter your Email address" id="email" required />
-                    <input type="submit" id="submit" class="btn">
-                </form>
-            </section>
-            <div class="container">
-                <section id="features">
-                    <div class="grid">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-fire"></i>
-                        </div>
-                        <div class="desc">
-                            <h2>Fueling Great Content, Together!</h2>
-                            <p>
-                                Join us in crafting captivating videos that spark conversations and keep viewers coming
-                                back for more.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-solid fa-rocket"></i>
-                        </div>
-                        <div class="desc">
-                            <h2>Elevate Entertainment, Empower Creators!</h2>
-                            <p>
-                                Description: Your support lifts entertainment to new heights and empowers creators to
-                                shine on a global stage.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid">
-                        <div class="icon">
-                            <i class="fa fa-3x fa-solid fa-seedling"></i>
-                        </div>
-                        <div class="desc">
-                            <h2>Cultivating Ideas, Cultivating Growth!</h2>
-                            <p>
-                                Support us in nurturing unique content that resonates widely and contributes to the
-                                ever-evolving digital landscape.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="how-it-works">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2i1CsXACwzw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </section>
-                <section id="pricing">
-                    <div class="product" id="tenor">
-                        <div class="level">
-                            Supporter
-                        </div>
-                        <div class="product-inner">
-                            <div class="product-captions">
-                                <h2 class="product-price">from 15$</h2>
-                                <p class="product-slogan">Fueling Creativity, One Sip at a Time!</p>
-                                <p class="product-desc">
-                                    Join our community of supporters who inspire us with a monthly contribution. Your
-                                    generosity keeps the creativity flowing.
-                                </p>
-                            </div>
-                            <button class="btn">Select</button>
-                        </div>
-                    </div>
-                    <div class="product" id="bass">
-                        <div class="level">
-                            advertisement
-                        </div>
-                        <div class="product-inner">
-                            <div class="product-captions">
-                                <h2 class="product-price">from 300$</h2>
-                                <p class="product-slogan">Spotlight Your Brand, Capture Your Audience!</p>
-                                <p class="product-desc">
-                                    Showcase your products in our videos to a wide audience, spotlighting your brand and
-                                    captivating viewers.
-                                </p>
-                            </div>
-                            <button class="btn">Select</button>
-                        </div>
-                    </div>
-                    <div class="product" id="valve">
-                        <div class="level">
-                            Sponsor
-                        </div>
-                        <div class="product-inner">
-                            <div class="product-captions">
-                                <h2 class="product-price">from 1500$</h2>
-                                <p class="product-slogan">Championing Creativity: Partner in Progress!</p>
-                                <p class="product-desc">
-                                    Champion creativity as a sponsor, integrating your brand seamlessly into our videos
-                                    and advancing quality content.
-                                </p>
-                            </div>
-                            <button class="btn">Select</button>
-                        </div>
-                    </div>
-                </section>
+                <div class="features__text-content">
+                    <h2 class="features__title">Proven Viral Strategies</h2>
+                    <p class="features__desc">
+                        Methods that actually work in 2025 to grow your audience and maximize engagement.
+                    </p>
+                </div>
             </div>
-            <footer>
-                <ul>
-                    <li><a class="footer-nav-link" href="#">Privacy</a></li>
-                    <li><a class="footer-nav-link" href="#">Terms</a></li>
-                    <li><a class="footer-nav-link" href="#">Contact</a></li>
-                </ul>
-                <span>
-                    **This is just a very simple WebPage for Certificate.
-                </span>
-                <span>
-                    © 2023 | Created By DalaNinja For freeCodeCamp
-                </span>
-            </footer>
-        </div>
-    </div>
+            <div class="features__card">
+                <div class="features__icon">
+                    <i class="fa fa-3x fa-gem"></i>
+                </div>
+                <div class="features__text-content">
+                    <h2 class="features__title">Premium Quality Assets</h2>
+                    <p class="features__desc">
+                        High-end visual resources to elevate your content production instantly.
+                    </p>
+                </div>
+            </div>
+            <div class="features__card">
+                <div class="features__icon">
+                    <i class="fa fa-3x fa-filter"></i>
+                </div>
+                <div class="features__text-content">
+                    <h2 class="features__title">Professional Effects</h2>
+                    <p class="features__desc">
+                        Cinema-grade filters and effects to make your content stand out.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="preview" id="preview">
+            <a href="https://www.tiktok.com/@dalamillionaire/video/7452993910525168918" target="_blank">
+                <video src="./assets/AS15 - V1 P1.mp4" width="360" height="640" controls loop></video>
+            </a>
+        </section>
+        <section class="pricing" id="pricing">
+            <div class="pricing__card">
+                <div class="pricing__card-title">
+                    TikTok Viral Secrets
+                </div>
+                <div class="pricing__card-inner">
+                    <div class="pricing__card-captions">
+                        <h2 class="pricing__card-price">$13.99</h2>
+                        <p class="pricing__card-slogan">Master the Algorithm</p>
+                        <p class="pricing__card-desc">
+                            Complete guide to going viral, avoiding shadowbans, and monetizing your TikTok content
+                            effectively.
+                        </p>
+                        <ul class="pricing__card-features">
+                            <li>Algorithm secrets</li>
+                            <li>Editing techniques</li>
+                            <li>Monetization methods</li>
+                        </ul>
+                    </div>
+                    <a class="primary-btn" href="https://shop.beacons.ai/dalamillionaire/bb9214a5-b805-4df7-a25d-f3deeb5bf18c?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Fdalamillionaire&show_back_button=true" target="_blank">See More!</a>
+                </div>
+            </div>
+            <div class="pricing__card">
+                <div class="pricing__card-title">
+                    Elite Luxury Clips
+                </div>
+                <div class="pricing__card-inner">
+                    <div class="pricing__card-captions">
+                        <h2 class="pricing__card-price">$9.99</h2>
+                        <p class="pricing__card-slogan">4K Viral Content Pack</p>
+                        <p class="pricing__card-desc">
+                            Premium 4K clips of exotic cars, luxury watches, cash stacks and lavish lifestyles.
+                        </p>
+                        <ul class="pricing__card-features">
+                            <li>Upscaled 4K quality</li>
+                            <li>Well-organized categories</li>
+                            <li>Ready-to-use edits</li>
+                        </ul>
+                    </div>
+                    <a class="primary-btn" href="https://shop.beacons.ai/dalamillionaire/6f123aee-9dfd-4f37-bec4-042a76b5ef29?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Fdalamillionaire&show_back_button=true" target="_blank">See More!</a>
+                </div>
+            </div>
+            <div class="pricing__card">
+                <div class="pricing__card-title">
+                    Obsidian & 4K Filters
+                </div>
+                <div class="pricing__card-inner">
+                    <div class="pricing__card-captions">
+                        <h2 class="pricing__card-price">$7.99</h2>
+                        <p class="pricing__card-slogan">Cinematic Visual Effects</p>
+                        <p class="pricing__card-desc">
+                            Professional CapCut filters for rich contrast and crystal-clear 4K enhancement.
+                        </p>
+                        <ul class="pricing__card-features">
+                            <li>Moody obsidian tones</li>
+                            <li>4K sharpness boost</li>
+                            <li>Easy CapCut integration</li>
+                        </ul>
+                    </div>
+                    <a class="primary-btn" href="https://shop.beacons.ai/dalamillionaire/a33f1f88-9600-4bfc-8781-415407a89f77?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Fdalamillionaire&show_back_button=true" target="_blank">See More!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer__links">
+            <li>
+                <a class="footer__link" href="https://beacons.ai/dalamillionaire" target="_blank">All Products</a>
+            </li>
+            <li>
+                <a class="footer__link" href="#">Support</a>
+            </li>
+            <li>
+                <a class="footer__link" href="#">Contact</a>
+            </li>
+        </ul>
+        <span>
+            Digital products designed to help creators succeed.
+        </span>
+        <span>
+            © 2025 | Created By Dala For freeCodeCamp
+        </span>
+    </footer>
 </body>
-
 </html>
