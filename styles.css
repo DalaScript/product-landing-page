@@ -1,6 +1,6 @@
-/* ==========================================================================
-   GLOBAL STYLES & VARIABLES
-   ========================================================================== */
+/*
+ * GLOBAL STYLES & VARIABLES
+ */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -19,8 +19,9 @@
     --primary__font: 'Source Code Pro', monospace;
 }
 
-/* Base Styles
-   ========================================================================== */
+/* 
+ * Base Styles
+ */
 
 * {
     box-sizing: border-box;
@@ -52,8 +53,9 @@ main > * {
     width: 100%;
 }
 
-/* Utility Classes
-   ========================================================================== */
+/* 
+ * Utility Classes
+ */
 
 .primary-btn {
     margin: 25px 20px;
@@ -76,8 +78,9 @@ main > * {
     background-color: var(--primary__li);
 }
 
-/* Reset Styles
-   ========================================================================== */
+/* 
+ * Reset Styles
+ */
 
 li {
     list-style: none;
@@ -88,12 +91,13 @@ a {
     text-decoration: none;
 }
 
-/* ==========================================================================
-   LAYOUT COMPONENTS
-   ========================================================================== */
+/*
+ * LAYOUT COMPONENTS
+ */
 
-/* Header Styles
-   ========================================================================== */
+/* 
+ * Header Styles
+ */
 
 header {
     padding: 10px 140px;
@@ -124,8 +128,9 @@ header {
 }
 
 
-/* Navigation
-   ========================================================================== */
+/* 
+ * Navigation
+ */
 
 .header__nav {
     font-weight: 400;
@@ -150,8 +155,9 @@ header {
     color: var(--primary);
 }
 
-/* Hero Section
-   ========================================================================== */
+/* 
+ * Hero Section
+ */
 
 .hero {
     margin-top: 50px;
@@ -181,8 +187,9 @@ header {
     color: var(--primary__white);
 }
 
-/* Features Section
-   ========================================================================== */
+/* 
+ * Features Section
+ */
 
 .features {
     margin-top: 30px;
@@ -217,8 +224,9 @@ header {
     padding: 5px;
 }
 
-/* How It Works Section
-   ========================================================================== */
+/* 
+ * How It Works Section
+ */
 
 .preview {
     margin-top: 50px;
@@ -231,8 +239,9 @@ header {
     max-width: 560px;
 }
 
-/* Pricing Section
-   ========================================================================== */
+/* 
+ * Pricing Section
+ */
 
 .pricing {
     margin-top: 60px;
@@ -293,8 +302,9 @@ header {
     font-size: 14px;
 }
 
-/* Footer
-   ========================================================================== */
+/* 
+ * Footer
+ */
 
 footer {
     margin-top: 30px;
@@ -325,9 +335,9 @@ footer > span {
     color: var(--primary__gray);
 }
 
-/* ==========================================================================
-   MEDIA QUERIES
-   ========================================================================== */
+/*
+ * MEDIA QUERIES
+ */
 
 @media (max-width: 1220px) {
     .nav-link {
