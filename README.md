@@ -56,8 +56,6 @@ A modern and fully responsive product landing page built from scratch for the fr
  - Building and structuring a full landing page independently
  - Designing interactive components like pricing cards and forms
  - Managing layout responsiveness for various screen sizes
- - Using CSS custom properties for scalable theme control
- - Embedding media and integrating external product links
  - Creating smooth user experiences through UI feedback and transitions
 
   > 🚀 For me, this project was more about **practice** and gaining additional **experience**,  
