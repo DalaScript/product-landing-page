@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <a href="#">
             <picture class="header__logo-container">
-                <img class="header__logo" src="./assets/logo.png" alt="logo">
+                <img class="header__logo" id="header-img" src="./assets/logo.png" alt="logo">
             </picture>
         </a>
-        <nav class="header__nav">
+        <nav class="header__nav" id="nav-bar">
             <ul>
                 <li class="header__nav-li">
-                    <a href="#features" class="header__nav-link">
+                    <a href="#features" class="header__nav-link nav-link">
                         Features
                     </a>
                 </li>
                 <li class="header__nav-li">
-                    <a href="#preview" class="header__nav-link">
+                    <a href="#preview" class="header__nav-link nav-link">
                         Preview
                     </a>
                 </li>
                 <li class="header__nav-li">
-                    <a href="#pricing" class="header__nav-link">
+                    <a href="#pricing" class="header__nav-link nav-link">
                         Pricing
                     </a>
                 </li>
@@ -37,9 +37,9 @@
     <main>
         <section class="hero" id="hero">
             <h2 class="hero__title">Sign up to get exclusive email updates directly from DalaMillionaire</h2>
-            <form class="hero__form">
-                <input class="hero__email" type="email" name="email" placeholder="Enter your Email address" required>
-                <input class="hero__btn primary-btn" type="submit" id="submit" value="Subscribe">
+            <form class="hero__form" id="form" action="https://www.freecodecamp.com/email-submit">
+                <input class="hero__email" id="email" type="email" name="email" placeholder="Enter your Email address" required>
+                <input class="hero__btn primary-btn" id="submit" type="submit" value="Subscribe">
             </form>
         </section>
         <section class="features" id="features">
@@ -78,9 +78,7 @@
             </div>
         </section>
         <section class="preview" id="preview">
-            <a href="https://www.tiktok.com/@dalamillionaire/video/7452993910525168918" target="_blank">
-                <video src="./assets/AS15 - V1 P1.mp4" width="360" height="640" controls loop></video>
-            </a>
+            <video src="./assets/preview-video.mp4" id="video" width="360" height="640" controls loop></video>
         </section>
         <section class="pricing" id="pricing">
             <div class="pricing__card">
